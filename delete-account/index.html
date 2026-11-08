@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Delete Your MyTiangge Account</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  /* Layout: one readable column; the in-app steps come first as a numbered card. */
+  --green: #267C3A;
+  --green-deep: #1B5E2B;
+  --paper: #F7F8F5;
+  --card: #FFFFFF;
+  --ink: #1F2421;
+  --muted: #5F6661;
+  --line: #E1E5DE;
+  --red: #C62828;
+  --awning: #F9A825;
+  --display: "Fraunces", Georgia, serif;
+  --body: "Source Sans 3", "Segoe UI", Roboto, Arial, sans-serif;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --green: #7FC98F; --green-deep: #A8DDB3; --paper: #121714; --card: #1A211C;
+    --ink: #E8ECE8; --muted: #A4ADA6; --line: #2C352E; --red: #F28B82; --awning: #F6C350;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --green: #7FC98F; --green-deep: #A8DDB3; --paper: #121714; --card: #1A211C;
+  --ink: #E8ECE8; --muted: #A4ADA6; --line: #2C352E; --red: #F28B82; --awning: #F6C350;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body { background: var(--paper); color: var(--ink); font: 400 17px/1.6 var(--body); }
+.wrap { max-width: 720px; margin: 0 auto; padding: 32px 20px 56px; }
+header { border-top: 6px solid var(--awning); padding-top: 24px; }
+h1 { font: 600 30px/1.2 var(--display); margin: 0; color: var(--green-deep); text-wrap: balance; }
+.meta { color: var(--muted); font-size: 15px; margin: 4px 0 0; }
+h2 { font: 600 21px/1.3 var(--display); color: var(--green-deep); margin: 34px 0 8px; text-wrap: balance; }
+p, li { max-width: 65ch; }
+a { color: var(--green); }
+a:focus-visible { outline: 3px solid var(--awning); outline-offset: 2px; }
+.steps { background: var(--card); border: 1px solid var(--line); border-left: 5px solid var(--red); border-radius: 12px; padding: 18px 20px 18px 20px; margin-top: 24px; }
+.steps h2 { margin-top: 0; }
+.steps ol { margin: 0; padding-left: 22px; display: grid; gap: 6px; }
+.path { font-weight: 600; }
+.table { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; font-size: 15px; background: var(--card); border: 1px solid var(--line); }
+th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { color: var(--muted); font-weight: 600; }
+tr:last-child td { border-bottom: 0; }
+.fil { border-top: 1px dashed var(--line); margin-top: 44px; padding-top: 8px; }
+footer { color: var(--muted); font-size: 14px; margin-top: 40px; }
+@media (max-width: 400px) { body { font-size: 16px; } h1 { font-size: 25px; } }
+</style>
+</head>
+<body>
+<main class="wrap">
+  <header>
+    <h1>Delete your MyTiangge account and data</h1>
+    <p class="meta">App: MyTiangge: Sari-sari Listahan (com.mytiangge.app) · Developer: MyTiangge</p>
+  </header>
+
+  <p>MyTiangge keeps your account and store records only on your phone. The developer has no server and holds no copy of your account or records, so you delete them yourself on the phone, in a few taps.</p>
+
+  <section class="steps" aria-labelledby="steps">
+    <h2 id="steps">How to delete your account (in the app)</h2>
+    <ol>
+      <li>Open <strong>MyTiangge</strong> and log in.</li>
+      <li>Tap <span class="path">Settings</span> (bottom bar).</li>
+      <li>Under <span class="path">Data &amp; backup</span>, tap <span class="path">Delete account and all data</span>.</li>
+      <li>Read the warning and tap <span class="path">Delete everything</span>.</li>
+      <li>Confirm with your password or fingerprint. Your account and all records are deleted right away, and the app returns to the Welcome screen.</li>
+    </ol>
+  </section>
+
+  <h2>If you can no longer open the app</h2>
+  <p>Uninstall MyTiangge, or go to your phone's <span class="path">Settings → Apps → MyTiangge → Storage → Clear data</span>. This deletes the account and every record stored by the app on that phone.</p>
+
+  <h2>What is deleted and what is kept</h2>
+  <div class="table">
+    <table>
+      <thead><tr><th scope="col">Data</th><th scope="col">What happens</th></tr></thead>
+      <tbody>
+        <tr><td>Account: owner name, password (hashed), recovery code, fingerprint setting</td><td>Deleted immediately</td></tr>
+        <tr><td>Store records: products, stock, sales, customers, utang, payments</td><td>Deleted immediately</td></tr>
+        <tr><td>Settings: store name, auto-lock and other preferences</td><td>Deleted immediately</td></tr>
+        <tr><td>Backup or CSV files you saved yourself</td><td>Kept. They are your files; delete them from wherever you saved them (phone storage, Google Drive, etc.).</td></tr>
+        <tr><td>Android automatic backup in your Google account (only if Google backup is on)</td><td>Kept by Google until it is replaced or removed. Delete it in Google Drive → Backups, or turn off backup in your phone's Settings → Google → Backup.</td></tr>
+        <tr><td>Technical diagnostics from Google's barcode scanner (ML Kit)</td><td>Held by Google under the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. It is not linked to your MyTiangge account, and the developer cannot access it.</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>The developer keeps no data after deletion, because the developer never receives your data. There is no additional retention period.</p>
+
+  <h2>Need help?</h2>
+  <p>Email <a href="mailto:rotsensuerte@gmail.com">rotsensuerte@gmail.com</a> (rotsensuerte@gmail.com). Because your data exists only on your phone, we can guide you through the steps but cannot delete it for you. See also the <a href="../">MyTiangge Privacy Policy</a>.</p>
+
+  <section class="fil" lang="fil" aria-labelledby="fil">
+    <h2 id="fil">Paano burahin ang account (Filipino)</h2>
+    <ol>
+      <li>Buksan ang MyTiangge at mag-log in.</li>
+      <li>I-tap ang <strong>Settings</strong>.</li>
+      <li>Sa <strong>Data at backup</strong>, i-tap ang <strong>Burahin ang account at lahat ng data</strong>.</li>
+      <li>I-tap ang <strong>Burahin lahat</strong>, saka kumpirmahin gamit ang password o fingerprint.</li>
+    </ol>
+    <p>Agad na mabubura ang account at lahat ng tala sa phone. Kung hindi mabuksan ang app, i-uninstall ito o i-clear ang data nito sa Settings ng phone. Hindi mabubura ang mga backup file na ikaw mismo ang nag-save. Para sa tanong: rotsensuerte@gmail.com</p>
+  </section>
+
+  <footer>© 2026 MyTiangge</footer>
+</main>
+</body>
+</html>
